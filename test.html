@@ -364,7 +364,7 @@
 <script>
   var ref = firebase.database().ref();
   var testref = ref.child("/SiteSettings");
-  ref.once("SiteSettings")
+  ref.once("value")
  .then(function (snap) {
  console.log("snap.val()", snap.val());
  });
