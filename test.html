@@ -362,9 +362,8 @@
 </script>
 
 <script>
-  firebase.database().ref('/SiteTitle/' + userId).once('value').then(function(snapshot) {
+  firebase.database().ref('/SiteTitle').once('value').then(function(snapshot) {
   alert((snapshot.val() && snapshot.val().SiteTitle) || 'Anonymous');
-  // ...
 });
 
   // var starCountRef = firebase.database().ref('posts/' + postId + '/starCount');
