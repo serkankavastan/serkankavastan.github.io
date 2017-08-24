@@ -12,7 +12,7 @@
     </header>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Serkan Kavastan</a>
+      <a class="navbar-brand" href="#"><p id="pTitle"></p></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -367,9 +367,13 @@
   ref.once("value")
  .then(function (snap) {
  console.log("snap.val()", snap.val());
+ if (snap.val().SiteSettings.Title!=undefined || snap.val().SiteSettings.Title!=null)
+ {
+  document.getElementById("pTitle").innerHTML(snap.val().SiteSettings.Title);
+ }
  });
 
-  testref.child("Title").set("Serkan Kavastan");
+  //testref.child("Title").set("Serkan Kavastan");
   
   // var starCountRef = firebase.database().ref('posts/' + postId + '/starCount');
   // starCountRef.on('value', function(snapshot) {
