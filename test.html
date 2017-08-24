@@ -364,6 +364,11 @@
 <script>
   var ref = firebase.database().ref();
   var testref = ref.child("/SiteSettings");
+  ref.once("SiteSettings")
+ .then(function (snap) {
+ console.log("snap.val()", snap.val());
+ });
+
   testref.child("Title").set("Serkan Kavastan");
   
   // var starCountRef = firebase.database().ref('posts/' + postId + '/starCount');
