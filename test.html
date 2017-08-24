@@ -365,9 +365,9 @@ require("firebase/database");
 </script>
 
 <script>
-  return firebase.database().ref('/users/').once('SiteTitle').then(function(snapshot) {
-  //var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
-  alert(snapshot.val());
+  return firebase.database().ref('/SiteTitle/' + userId).once('value').then(function(snapshot) {
+  alert((snapshot.val() && snapshot.val().SiteTitle) || 'Anonymous');
+  // ...
 });
 
   // var starCountRef = firebase.database().ref('posts/' + postId + '/starCount');
