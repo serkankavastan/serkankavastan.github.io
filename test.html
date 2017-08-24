@@ -330,7 +330,7 @@
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-bottom">
     <div class="container"> 
-        <a class="chevron" href="/" onclick="document.body.scrollTop=0;return false;">Yukarı</a> 
+        <a class="chevron" href="/" onclick="document.body.scrollTop=0;return false;" id="footerupbutton">Top</a> 
         <span class="text-muted" style="margin-top:2px;display:inline-block;">Tüm hakları saklıdır © 2017 Serkan Kavastan
             </span>
     </div>
@@ -366,19 +366,18 @@
   var testref = ref.child("/SiteSettings");
   ref.once("value")
  .then(function (snap) {
- console.log("snap.val()", snap.val());
- if (snap.val().SiteSettings.Title!=undefined || snap.val().SiteSettings.Title!=null)
- {
-  document.getElementById("pTitle").innerHTML=snap.val().SiteSettings.Title;
- }
+  if (snap.val().SiteSettings.Title!=undefined || snap.val().SiteSettings.Title!=null)
+  {
+    document.getElementById("pTitle").innerHTML=snap.val().SiteSettings.Title;
+  }
+  if (snap.val().SiteSettings.FooterYukariButonuText!=undefined || snap.val().SiteSettings.FooterYukariButonuText!=null)
+  {
+    document.getElementById("footerupbutton").innerHTML=snap.val().SiteSettings.FooterYukariButonuText;
+  }
  });
 
   //testref.child("Title").set("Serkan Kavastan");
-  
-  // var starCountRef = firebase.database().ref('posts/' + postId + '/starCount');
-  // starCountRef.on('value', function(snapshot) {
-  //   updateStarCount(postElement, snapshot.val());
-  // });
+
 </script>
 
 </body>
