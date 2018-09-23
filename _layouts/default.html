@@ -5,15 +5,33 @@
 
   <body>
 
-    {%- include header.html -%}
-
+    <table>
+  <tr>
+    <td>{%- include header.html -%}</td>
+  </tr>
+  <tr>
+    <td>
     <div class="py-5">
       <div class="container page-content">
           {{ content }}
       </div>
     </div>
+    </td>
+      </tr>
+  <tr>
+    <td>    {%- include footer.html -%}
+</td>
+  </tr>
+     
+</table>
+    
+    
+    
+    
+    
+    
 
-    {%- include footer.html -%}
+
 
   </body>
 
