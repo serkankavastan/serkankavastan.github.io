@@ -6,12 +6,12 @@ header: Kategoriler
 
 <ul class="tag_box list-inline">
   {% assign categories_list = site.categories %}
-  {% include categories_list %}
+  {% include Pages/categories_list %}
 </ul>
 {% for category in site.categories %} 
   <h2 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h2>
   <ul>
     {% assign pages_list = category[1] %}  
-    {% include pages_list %}
+    {% include Pages/pages_list %}
   </ul>
 {% endfor %}
