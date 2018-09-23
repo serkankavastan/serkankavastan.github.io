@@ -21,3 +21,11 @@ title: Serkan Kavastan
 <div class="alert alert-primary" role="alert">
   A simple primary alert—check it out!
 </div>
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
