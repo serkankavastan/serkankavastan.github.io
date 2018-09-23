@@ -9,12 +9,6 @@ title: Serkan Kavastan
 
 <h1>Latest Posts</h1>
 
-<table>
-  <tr>
-    <td>ilk Kolon</td>
-  </tr>
-</table>
-
 <ul>
   {% for post in site.posts %}
     <li>
