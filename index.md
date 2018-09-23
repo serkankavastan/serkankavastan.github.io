@@ -5,27 +5,12 @@
 layout: default
 title: Serkan Kavastan
 ---
-<h1>{{ "Serkan Kavastan" | downcase }}</h1>
-
-<h1>Latest Posts</h1>
-
 <ul>
   {% for post in site.posts %}
     <li>
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       <p>{{ post.excerpt }}</p>
     </li>
+    <hr />
   {% endfor %}
 </ul>
-
-<div class="alert alert-primary" role="alert">
-  A simple primary alert—check it out!
-</div>
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
