@@ -5,31 +5,41 @@
 
   <body>
 
-    <table>
-  <tr>
-    <td>{%- include header.html -%}</td>
-  </tr>
-  <tr>
-    <td>
-    <div class="py-5">
-      <div class="container page-content">
-          {{ content }}
-      </div>
-    </div>
-    </td>
-      </tr>
-  <tr>
-    <td>    {%- include footer.html -%}
-</td>
-  </tr>
-     
-</table>
-    
-    
-    
-    
-    
-    
+  <table>
+    <tr>
+      <td>{%- include header.html -%}</td>
+    </tr>
+    <tr>
+      <td>
+          <div class="well well-sm">
+              <h4>Kategoriler</h4>
+              <ul class="list-unstyled">
+                {% for category in site.categories %}
+                  <li><a href="/kategori/#{{ category[0] }}-ref">{{ category[0] }}</a> <span>({{ category[1].size }})</span></li>
+                {% endfor %}
+              </ul>
+            </div>
+      </td>
+      <td>
+        <div class="py-5">
+          <div class="container page-content">
+            {{ content }}
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>    {%- include footer.html -%}
+      </td>
+    </tr>
+
+  </table>
+
+
+
+
+
+
 
 
 
