@@ -1,4 +1,6 @@
 - name: Home
   link: /
+  plink: /
 - name: About
   link: /about
+  plink: /about/
