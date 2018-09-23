@@ -53,8 +53,8 @@ collections:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - update_boostrap.sh
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - update_boostrap.sh
