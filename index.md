@@ -5,5 +5,4 @@
 layout: default
 title: Serkan Kavastan
 ---
-index.md
-<h1>{{ "Hello World!" | downcase }}</h1>
+<h1>{{ "Serkan Kavastan" | downcase }}</h1>
