@@ -1,4 +1,4 @@
-{% if site.Options.pages_list.provider == "custom" %}
+{% if site.pages_list.provider == "custom" %}
   {% include custom/pages_list %}
 {% else %}
   {% for node in pages_list %}
