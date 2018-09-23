@@ -2,10 +2,10 @@
 layout: post
 title:  "Serkan Kavastan"
 date:   2018-09-23 13:20
-categories: [Web,Merhaba]
+categories: [Web]
 author: serkan.kavastan
 comments: true
-tags: [serkan, kavastan, blog, ]
+tags: [serkan, kavastan, blog, Merhaba ]
 ---
 Merhaba!<br/>
 Yeni blog'uma hoşgeldiniz.
