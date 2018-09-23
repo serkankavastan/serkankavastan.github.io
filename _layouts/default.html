@@ -1,26 +1,20 @@
-<!doctype html>
-<html lang="tr">
-  <head>
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "tr" }}">
 
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <meta name="description" content="{{ page.title }}" />
-  <meta name="author" content="{{ site.author.name }}" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="post-date" content="{{ page.date | date:"%Y-%m-%d" }}" />
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans" />
-  <link rel="stylesheet" href="/assets/bundle.min.css?v20180514" async />
-  <link rel="alternate" href="/atom.xml" type="application/atom+xml" title="ATOM Feed" />
-  <link rel="alternate" href="/rss.xml" type="application/rss+xml" title="RSS Feed" />
-  <meta property="og:image" content="/assets/logo-192.png" />
-  <meta property="og:image:height" content="192" />
-  <meta property="og:image:width" content="192" />
-  <meta property="og:title" content="{{ site.author.name }}" />
-  <meta property="og:description" content="{{ site.author.name }}" />
-  <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
-  </head>
+  {%- include head.html -%}
+
   <body>
-    {% include navigation.html %}
-    {{ content }}
+
+    {%- include header.html -%}
+
+    <div class="py-5">
+      <div class="container page-content">
+          {{ content }}
+      </div>
+    </div>
+
+    {%- include footer.html -%}
+
   </body>
+
 </html>
