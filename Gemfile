@@ -19,7 +19,10 @@ gem 'jekyll-sitemap'
 
 gem "jekyll-paginate"
 
-gem install bootstrap -v 4.1.3
+gem 'bootstrap-sass', '~> 4.1.3'
+gem 'sass-rails', '>= 3.2'
+
+# gem install bootstrap -v 4.1.3
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
