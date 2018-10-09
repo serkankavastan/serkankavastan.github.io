@@ -5,7 +5,7 @@
     <p class="h5 mb-3">{{ site.title | escape }}</p>
 
     <div class="row">
-
+{%- if 1=0 -%}
       <div class="col-sm">
         <ul class="list-unstyled">
           <li>
@@ -24,7 +24,7 @@
           {%- endif -%}
         </ul>
       </div>
-
+{%- endif -%}
 
       <div class="col-sm text-right">
         <p>{{- site.description | escape -}}</p>
