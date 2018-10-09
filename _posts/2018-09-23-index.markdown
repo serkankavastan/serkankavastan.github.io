@@ -7,4 +7,4 @@ author: serkan.kavastan
 comments: true
 tags: [serkan, kavastan, blog, Merhaba ]
 ---
-Yeni blog'uma hoşgeldiniz. Yazılım dünyasındaki gelişmeleri buradan takipedebilirsiniz.
+Yeni blog'uma hoşgeldiniz. Yazılım dünyasındaki gelişmeleri buradan takip edebilirsiniz.
