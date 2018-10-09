@@ -12,5 +12,6 @@ title: Serkan Kavastan - index
       <p>{{ post.excerpt }}</p>
     </li>
     <hr />
+  sssssssssss
   {% endfor %}
 </ul>
