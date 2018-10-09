@@ -2,7 +2,7 @@
 layout: post
 title:  "Hoşgeldiniz!"
 date:   2018-09-23 13:20
-categories: [Web]
+categories: [Web, Welcome]
 author: serkan.kavastan
 comments: true
 tags: [serkan, kavastan, blog, Merhaba ]
